@@ -1,0 +1,5 @@
+TODO:
+static void addLicense(LicenseEntryCollector collector) {
+  _collectors ??= <LicenseEntryCollector>[];
+  _collectors!.add(collector);
+}
