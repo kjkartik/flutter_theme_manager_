@@ -1,5 +1,4 @@
-TODO:
-static void addLicense(LicenseEntryCollector collector) {
-  _collectors ??= <LicenseEntryCollector>[];
-  _collectors!.add(collector);
-}
+flutter_theme_manager
+
+<flutter_Theme_manager use for passing light and dark theme in very simple way>
+
