@@ -25,26 +25,26 @@ start using the package.
 ## Usage
 
 ```dart
-const like = "void main() {"
-" runApp(const MyApp());"
-"}"
+const like = void main() {
+ runApp(const MyApp());
+ }
 /// this is root of application
-"class MyApp extends StatelessWidget {"
- "const MyApp({Key? key}) : super(key: key);"
-" @override"
- "Widget build(BuildContext context) {"
+ class MyApp extends StatelessWidget {
+ const MyApp({Key? key}) : super(key: key);
+ @override
+ Widget build(BuildContext context) {
    
    /// Simple call the themeBlocProvider and passing home
-"  return themeBlocProvider(home:Home(),debugShowCheckedModeBanner: true  );"
- "}"
-"}"
+  return themeBlocProvider(home:Home(),debugShowCheckedModeBanner: true  );
+ }
+}
 
    /// "provide theme to app through call AppTheme.theme and passing context,lightTheme color and darkThemeColor".
-'style: TextStyle('
-                 'color: AppTheme.theme('
-                     'context: context,'
-                      'darkTheme: Colors.white,'
-                      'lightTheme: Colors.black)),';
+style: TextStyle(
+                 color: AppTheme.theme(
+                     context: context,
+                      darkTheme: Colors.white, 
+                      lightTheme: Colors.black)),;
 ```
 
 ## Additional information

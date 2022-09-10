@@ -1,7 +1,7 @@
 name: flutter_theme_manager
 description: We Provide light and dark theme in very simple way.
-version: 0.0.2+3
-homepage:  https://github.com/kjkartik/Them_manager
+version: 0.0.2+5
+homepage:  https://github.com/kjkartik/Flutter_theme_manager.git
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
