@@ -49,4 +49,4 @@ style: TextStyle(
 
 ## Additional information
 
-TODO: Through use this package you can pass your theme in very simple way by passing the light and dark color on same time.
+ Through use this package you can pass your theme in very simple way by passing the light and dark color on same time.
