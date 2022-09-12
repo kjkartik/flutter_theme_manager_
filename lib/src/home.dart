@@ -4,6 +4,7 @@ import 'bloc.dart';
 
 BlocProvider<AppThemeBloc> themeManager({
 
+  ///Making the function for passing the theme in material app
   required Widget Function(ThemeData) themeBuilder,
 
   //  home,
@@ -45,8 +46,12 @@ BlocProvider<AppThemeBloc> themeManager({
 
 }) {
   return BlocProvider(
+    // create a theme instance
     create: (BuildContext context) => AppThemeBloc(),
     child: BlocBuilder<AppThemeBloc, ThemeData>(builder: (context, theme) {
+
+
+      //return theme
       return themeBuilder(theme);
       // return MaterialApp(
       //   theme: Theme,

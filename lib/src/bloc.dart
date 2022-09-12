@@ -30,8 +30,11 @@ class AppThemeBloc extends Bloc<ThemeEvent, ThemeData> {
 
 
 class AppThemeColor {
+
+  /// Passing the brightness in dark mode
   static final ThemeData _dark = ThemeData(brightness: Brightness.dark,);
 
+  /// Passing the brightness in light mode
   static final ThemeData _light = ThemeData(brightness: Brightness.light, );
 }
 
@@ -39,6 +42,7 @@ class AppTheme{
 
 // return the Color in whole app..
   static theme({required context,required darkTheme,required lightTheme}){
+
     var data = Theme.of(context).brightness == Brightness.light?lightTheme:darkTheme;
     return data;
   }
