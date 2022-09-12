@@ -25,7 +25,7 @@ Package handle Day & Night(light & Dark) theme.
 
 ## Getting started
 
-List prerequisites and provide or point to information on how to
+
 start using the package.
 <table>
   <tr>
@@ -35,7 +35,11 @@ start using the package.
 </tr>
 </table>
 
+## How To Use
 
+To use this package..
+
+       In root of application return themeManager  and then  return Material App in themebuilde and pass theme...
 
 ## Usage
 
