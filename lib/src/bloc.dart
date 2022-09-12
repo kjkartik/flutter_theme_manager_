@@ -1,7 +1,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:themepackage/Bloc/theme_event.dart';
+
+
+
+
+
+abstract class ThemeEvent{}
+class AppThemeChangeEvent  extends ThemeEvent {}
 
 class AppThemeBloc extends Bloc<ThemeEvent, ThemeData> {
   AppThemeBloc() : super(AppThemeColor._light){

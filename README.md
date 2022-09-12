@@ -20,7 +20,6 @@ Package handle Day & Night(light & Dark) theme.
 <table>
   <tr>
     <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme.png?raw=true" alt="Success Status" width="200"></td>
-    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme.png?raw=true" alt="How example looks" width="200"></td>
   </tr>
 </table>
 
@@ -47,11 +46,11 @@ void main() {
 }
 
    /// "provide theme to app through call AppTheme.theme and passing context,lightTheme color and darkThemeColor".
-style: TextStyle(
-                 color: AppTheme.theme(
-                     context: context,
-                      darkTheme: Colors.white, 
-                      lightTheme: Colors.black)),;
+"style: TextStyle("
+                 "color: AppTheme.theme("
+                 "    context: context,"
+                  "    darkTheme: Colors.white, "
+                      "lightTheme: Colors.black));"}
 ```
 
 ## Additional information
