@@ -1,6 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_theme_manager/flutter_theme_manager.dart';
+
+
+
 
 void main() {
   runApp(const MyApp());
@@ -8,14 +10,15 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return  buildBlocBuilder(home:Home());
-
+    return themeManager(
+        themeBuilder: (ThemeData ) {
+          return MaterialApp(theme:ThemeData ,);
+        }
+    );
   }
 }
-
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -25,6 +28,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  bool switchThemes= false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,35 +40,24 @@ class _HomeState extends State<Home> {
           "AppBar",
           style: TextStyle(
               color: AppTheme.theme(
-                  context: context, darkTheme: Colors.black, lightTheme: Colors.red)),
+                  context: context, darkTheme: Colors.black, lightTheme: Colors.black)),
         ),
         actions: [
-          InkWell(
-            child: Center(
-                child: Text(
-                  "theme         ",
-                  style: TextStyle(
-                      color: AppTheme.theme(
-                          context: context,
-                          darkTheme: Colors.white,
-                          lightTheme: Colors.black)),
-                )),
-            onTap: () {
-              changeTheme(context),
-            },
-          ),
-          TextButton(onPressed: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (_)=> Home1()));
-          }, child: Text("Next"))
+          Switch(value:switchThemes , onChanged: (val){
+            setState((){
+              switchThemes =! switchThemes;
+            });
+            changeTheme(context);
+          }),
+
         ],
       ),
-      body: Column(
+      body: Column(mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(" Flutter.dev ",style: TextStyle(color:AppTheme.theme(context: context,lightTheme: Color(0xffffffff),darkTheme:Colors.yellow ) ),),
+          Center(child: Text(" Flutter.dev ",style: TextStyle(color:AppTheme.theme(context: context,lightTheme: Color(0xffffffff),darkTheme:Colors.black ) ),)),
         ],
       ),
 
     );
   }
 }
-

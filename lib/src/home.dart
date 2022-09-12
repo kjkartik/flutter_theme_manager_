@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'bloc.dart';
 
-BlocProvider<AppThemeBloc> themeBlocProvider({
+BlocProvider<AppThemeBloc> themeManager({
 
   required Widget Function(ThemeData) themeBuilder,
 

@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return themeBlocProvider(
+    return themeManager(
         themeBuilder: (ThemeData ) {
           return MaterialApp(theme:ThemeData ,);
         }
@@ -71,6 +71,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     /// backgroundColor: AppTheme.theme(context: context, lightTheme: //passing light color, darkTheme: //passing dark color),
       appBar: AppBar(
         backgroundColor: AppTheme.theme(context: context, lightTheme: Colors.red, darkTheme: Colors.blue),
         title: Text(
