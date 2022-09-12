@@ -46,7 +46,7 @@ Package handle Day & Night(light & Dark) theme.
     );
   
 
- Use this code to pass color in Whole app
+ Use this to pass color in Whole app
 
          color:AppTheme.theme(context:
                     context,lightTheme: Color(0xffffffff),darkTheme:Colors.black )
