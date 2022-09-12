@@ -17,6 +17,13 @@ Control your light and dark theme in very simple way.
 
 Package handle Day & Night(light & Dark) theme.
 
+<table>
+  <tr>
+    <td><img src="https://github.com/kartikSharma0003/shopingui/blob/master/assets/patyimh.png?raw=true" alt="Success Status" width="200"></td>
+    <td><img src="https://github.com/kartikSharma0003/shopingui/blob/master/assets/patyimh.png?raw=true" alt="How example looks" width="200"></td>
+  </tr>
+</table>
+
 ## Getting started
 
 List prerequisites and provide or point to information on how to
