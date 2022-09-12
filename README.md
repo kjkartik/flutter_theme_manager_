@@ -27,30 +27,68 @@ Package handle Day & Night(light & Dark) theme.
 
 List prerequisites and provide or point to information on how to
 start using the package.
+<table>
+  <tr>
+    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme1.png" alt="Success Status" width="200"></td>
+    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme2.png?raw=true" alt="Success Status" width="200"></td>
+ 
+</tr>
+</table>
+
+
 
 ## Usage
 
 ```dart
 void main() {
- runApp(const MyApp());
- }
-/// this is root of application
- class MyApp extends StatelessWidget {
- const MyApp({Key? key}) : super(key: key);
- @override
- Widget build(BuildContext context) {
-   
-   /// Simple call the themeBlocProvider and passing home
-  return themeBlocProvider(home:Home(),debugShowCheckedModeBanner: true  );
- }
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return themeBlocProvider(
+        themeBuilder: (ThemeData ) {
+          return MaterialApp(theme:ThemeData ,);
+        }
+    );
+  }
 }
 
    /// "provide theme to app through call AppTheme.theme and passing context,lightTheme color and darkThemeColor".
-"style: TextStyle("
-                 "color: AppTheme.theme("
-                 "    context: context,"
-                  "    darkTheme: Colors.white, "
-                      "lightTheme: Colors.black));"}
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+
+  bool changeTheme = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppTheme.theme(context: context, lightTheme: Colors.red, darkTheme: Colors.blue),
+        title: Text(
+          "AppBar",
+          style: TextStyle(
+              color: AppTheme.theme(
+                  context: context, darkTheme: Colors.black, lightTheme: Colors.black)),
+        ),
+      ),
+      body: Column(mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(child: Text(" Flutter.dev ",style: TextStyle(color:AppTheme.theme(context: context,lightTheme: Color(0xffffffff),darkTheme:Colors.black ) ),)),
+        ],
+      ),
+
+    );
+  }
+}
 ```
 
 ## Additional information
