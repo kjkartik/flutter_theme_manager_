@@ -26,7 +26,7 @@ Package handle Day & Night(light & Dark) theme.
 ## Getting started
 
 
-start using the package.
+
 <table>
   <tr>
     <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme1.png" alt="Success Status" width="200"></td>
@@ -37,9 +37,19 @@ start using the package.
 
 ## How To Use
 
-To use this package..
+   Use this instead of MaterialApp in root of application.
+       
+                  return themeManager(
+        themeBuilder: (ThemeData ) {
+          return MaterialApp(theme:ThemeData ,);
+        }
+    );
+  
 
-       In root of application return themeManager  and then  return Material App in themebuilde and pass theme...
+ Use this code to pass color in Whole app
+
+         color:AppTheme.theme(context:
+                    context,lightTheme: Color(0xffffffff),darkTheme:Colors.black )
 
 ## Usage
 
