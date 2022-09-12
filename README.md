@@ -19,8 +19,8 @@ Package handle Day & Night(light & Dark) theme.
 
 <table>
   <tr>
-    <td><img src="https://github.com/kartikSharma0003/shopingui/blob/master/assets/patyimh.png?raw=true" alt="Success Status" width="200"></td>
-    <td><img src="https://github.com/kartikSharma0003/shopingui/blob/master/assets/patyimh.png?raw=true" alt="How example looks" width="200"></td>
+    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme.png?raw=true" alt="Success Status" width="200"></td>
+    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme.png?raw=true" alt="How example looks" width="200"></td>
   </tr>
 </table>
 

@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
                           lightTheme: Colors.black)),
                 )),
             onTap: () {
-              context.read<AppThemeBloc>().add(AppThemeChangeEvent());
+              changeTheme(context),
             },
           ),
           TextButton(onPressed: (){
@@ -50,3 +50,4 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
