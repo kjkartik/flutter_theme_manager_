@@ -32,7 +32,7 @@ start using the package.
 ## Usage
 
 ```dart
-const like = void main() {
+void main() {
  runApp(const MyApp());
  }
 /// this is root of application
