@@ -12,11 +12,9 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return themeManager(
-        themeBuilder: (ThemeData ) {
-          return MaterialApp(theme:ThemeData ,);
-        }
-    );
+    return themeManager( themeBuilder: (ThemeData ) {
+      return MaterialApp(home: Home(),theme: ThemeData,);
+    });
   }
 }
 
@@ -35,7 +33,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppTheme.theme(context: context, lightTheme: Colors.red, darkTheme: Colors.blue),
+    backgroundColor: AppTheme.theme(context: context, lightTheme: Colors.blue, darkTheme: Colors.blue),
         title: Text(
           "AppBar",
           style: TextStyle(
@@ -54,10 +52,12 @@ class _HomeState extends State<Home> {
       ),
       body: Column(mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(child: Text(" Flutter.dev ",style: TextStyle(color:AppTheme.theme(context: context,lightTheme: Color(0xffffffff),darkTheme:Colors.black ) ),)),
+          Center(child: Text(" Flutter.dev ",style: TextStyle(color:AppTheme.theme(context: context,lightTheme: Colors.black,darkTheme:Color(0xffffffff) ) ),)),
         ],
       ),
 
     );
   }
+
+
 }

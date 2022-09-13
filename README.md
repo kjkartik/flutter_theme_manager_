@@ -29,7 +29,7 @@ Package handle Day & Night(light & Dark) theme.
 
 <table>
   <tr>
-    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme1.png" alt="Success Status" width="200"></td>
+    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme1.png?raw=true" alt="Success Status" width="200"></td>
     <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme2.png?raw=true" alt="Success Status" width="200"></td>
  
 </tr>
@@ -109,3 +109,12 @@ class _HomeState extends State<Home> {
 ## Additional information
 
  Through use this package you can pass your theme in very simple way by passing the light and dark color on same time.
+
+
+<table>
+  <tr>
+    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme1.png?raw=true" alt="Success Status" width="200"></td>
+    <td><img src="https://github.com/kjkartik/flutter_theme_manager_/blob/master/example/assets/theme2.png?raw=true" alt="Success Status" width="200"></td>
+
+</tr>
+</table>

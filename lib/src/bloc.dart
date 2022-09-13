@@ -50,8 +50,6 @@ class AppTheme{
 
 }
 
-void changeTheme(context){
-
-  /// handel the theme chage
+void changeTheme(BuildContext context) {
   context.read<AppThemeBloc>().add(AppThemeChangeEvent());
 }
