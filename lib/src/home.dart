@@ -3,9 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'bloc.dart';
 
 BlocProvider<AppThemeBloc> themeManager({
-
   ///Making the function for passing the theme in material app
-  required Widget Function(ThemeData) themeBuilder,
+  required Widget Function(ThemeData theme) themeBuilder,
 
   //  home,
   // debugShowCheckedModeBanner,
@@ -42,15 +41,11 @@ BlocProvider<AppThemeBloc> themeManager({
   // ThemeMode? themeMode,
   // bool? useInheritedMediaQuery,
   // navigatorObservers,
-
-
 }) {
   return BlocProvider(
     // create a theme instance
     create: (BuildContext context) => AppThemeBloc(),
     child: BlocBuilder<AppThemeBloc, ThemeData>(builder: (context, theme) {
-
-
       //return theme
       return themeBuilder(theme);
       // return MaterialApp(
